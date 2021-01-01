@@ -1,0 +1,60 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js dev
+
+PATH: 
+  /usr/games:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/austin/development/flutter/bin:/home/austin/development/flutter/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  10.22.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/austin/development/react/part4/package.json: Unexpected token } in JSON at position 496
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "part4",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "NODE_ENV=production node index.js",
+      "dev": "NODE_ENV=development nodemon index.js",
+      "test": "NODE_ENV=test jest --verbose"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "bcrypt": "^5.0.0",
+      "cors": "^2.8.5",
+      "dotenv": "^8.2.0",
+      "express": "^4.17.1",
+      "express-async-errors": "^3.1.1",
+      "lodash": "^4.17.20",
+      "mongoose": "^5.10.9",
+    },
+    "devDependencies": {
+      "jest": "^26.5.2",
+      "supertest": "^6.0.0",
+      "nodemon": "^2.0.6"
+    },
+    "jest": {
+      "testEnvironment": "node"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
